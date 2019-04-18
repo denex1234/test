@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<form action="/yonetim/Admin/Login" method="post">
+    @ViewBag.Mesaj
+    Kullanıcı Adı:<input type="text" name="KullaniciAdi" /><br />
+    Kullanıcı Şifresi<input type="password" name="KullaniciSifre" /><br />
+    <input type="submit" value="Kullanıcı Girisi" />
+</form>
+

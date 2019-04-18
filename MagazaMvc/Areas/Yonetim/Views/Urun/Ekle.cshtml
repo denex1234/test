@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Ekle";
+}
+
+<h2>Ekle</h2>
+<form method="post" action="/yonetim/urun/ekle" enctype="multipart/form-data">
+    Ürün Adı:<input type="text" name="UrunAdi" /><br />
+    Ürün Fiyat:<input type="text" name="UrunFiyat" /><br />
+    Ürün Kategori:<input type="text" name="UrunKategori" /><br />
+    Ürün Resmi:<input type="file" name="UrunResmi" /><br />
+    Ürün Tarih:<input type="text" name="Uruntarih" /><br />
+    Ürün Açıklama:<input type="text" name="UrunAciklama" /><br />
+    <input type="submit" value="Ürün Kaydet" />
+
+</form>
+

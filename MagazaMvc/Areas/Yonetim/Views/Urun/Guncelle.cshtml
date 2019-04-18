@@ -1,0 +1,16 @@
+﻿@model MagazaMvc.Models.Urun
+@{
+    ViewBag.Title = "Guncelle";
+}
+
+<h2>Guncelle</h2>
+<form method="post" action="/yonetim/urun/guncelle">
+    Ürün Adı:<input type="text" name="UrunAdi" value="@Model.UrunAdi" /><br />
+    Ürün Fiyat:<input type="text" name="UrunFiyat" value="@Model.UrunFiyat" /><br />
+    Ürün Kategori:<input type="text" name="UrunKategori" value="@Model.UrunKategori" /><br />
+    Ürün Tarih:<input type="text" name="UrunTarih"  value="@Model.UrunTarih"/><br />
+    Ürün Açıklama:<input type="text" name="UrunAciklama"  value="@Model.UrunAciklama"/><br />
+    <input type="hidden" name="UrunId" value="@Model.UrunId"/>
+     <input type="submit" value="Ürün Güncelle" />
+    
+</form>

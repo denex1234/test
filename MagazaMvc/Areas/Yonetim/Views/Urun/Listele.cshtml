@@ -1,0 +1,27 @@
+﻿@model List<MagazaMvc.Models.Urun>
+@{
+    ViewBag.Title = "Listele";
+}
+
+<h2>Listele</h2>
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.UrunAdi</td>
+            <td>@item.UrunFiyat</td>
+            <td>@item.UrunKategori</td>
+            <td>
+            @if (item.UrunResmi == "" || item.UrunResmi==null)
+            {
+                <img src="~/Content/Upload/resimyok.png?w=100&h=80&mode=pad" />
+            }
+            else
+            {
+                <img src="~/Content/Upload/@item.UrunResmi?width=100" />
+            }
+           </td>
+            <td>@item.UrunTarih</td>
+        </tr>
+    }
+</table>
